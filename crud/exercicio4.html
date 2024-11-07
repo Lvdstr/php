@@ -1,0 +1,77 @@
+<style>
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #cadastrar{
+    width: 550px;
+    height: 190px;
+    border-radius: 12px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .selection{
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .butoes{
+    position: relative;
+    top: 10px;
+  }
+
+  input{
+    width: 170px;
+    height: 40px;
+    background-color: blue;
+    border: 2px solid rgb(18, 18, 18);
+    margin: -3px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    transition: 0.9s;
+  }
+
+  input:hover{
+    background-color: blueviolet;
+  }
+
+</style>
+
+  <form id="cadastrar" name="cadastrar" action="cadastrou.php" target="_self" method="GET">
+    <div class="selection">
+      <label for="produto">produto:</label>
+      <select id="produto" name="produto">
+        <option value="" selected disabled>selecione</option>
+        <optgroup label="açougue">
+        <option value="contrafile">contrafile</option>
+        <option value="alcatra">alcatra</option>
+        <option value="maminha">maminha</option>
+        </optgroup>
+        <optgroup label="padaria">
+        <option value="presunto">presunto</option>
+        <option value="queijo">queijo</option>
+        <option value="calabresa">calabresa</option>
+        </optgroup>
+        <optgroup label="hortifruti">
+        <option value="maça">maça</option>
+        <option value="banana">banana</option>
+        <option value="melancia">melancia</option>
+        </optgroup>
+      </select>
+    </div>
+    <div class="butoes">
+      <input id="enviar" name="" type="submit" value="Enviar" style="border-radius: 5px 0px 0px 5px;">
+      <input id="limpar" name="" type="reset" value="Limpar" style="border-radius: 0px 5px 5px 0px;">
+    </div>
+  </form>
